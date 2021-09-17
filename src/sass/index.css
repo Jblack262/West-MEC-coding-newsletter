@@ -1,0 +1,553 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../Circuit Board.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #222;
+  cursor: help;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+input [type=radio] {
+  vertical-align: text-bottom;
+}
+
+input [type=checkbox] {
+  vertical-align: bottom;
+}
+
+.ie7 input [type=checkbox] {
+  vertical-align: baseline;
+}
+
+.ie6 input[type=checkbox] {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font-size: 99%;
+}
+
+small {
+  font-size: 99%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.05em;
+}
+
+sub {
+  bottom: -0.025em;
+}
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+button,
+input[type=button] {
+  width: auto;
+  overflow: hidden;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.review {
+  width: clamp(40%, 520px, 90%);
+  background-color: #ababab;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.review .img-container {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0.5rem -0.25rem 0 lightblue;
+}
+.review .img-container .person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.review .img-container .quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: lightblue;
+  color: black;
+}
+
+.author {
+  font-size: 1.5rem;
+}
+
+.author,
+.info {
+  margin: 0.5rem auto;
+  max-width: 400px;
+}
+
+.button-container {
+  margin: 0.5rem 0;
+}
+
+.socials .outline-button {
+  background: none;
+  box-sizing: content-box;
+  width: 100px;
+  height: 40px;
+  margin: 0 1rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.socials .outline-button span {
+  position: absolute;
+  margin: 0;
+  background: #99999966;
+}
+.socials .outline-button span::after {
+  position: fixed;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: red;
+  border-radius: 50%;
+}
+.socials .outline-button span:nth-child(1)::after {
+  top: 0;
+  left: 0;
+  background: pink;
+  -webkit-animation: top 0.5s linear;
+          animation: top 0.5s linear;
+}
+@-webkit-keyframes top {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 96px;
+  }
+}
+@keyframes top {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 96px;
+  }
+}
+.socials .outline-button span:nth-child(2)::after {
+  top: 0;
+  right: 0;
+  background: blue;
+}
+.socials .outline-button span:nth-child(3)::after {
+  bottom: 0;
+  right: 0;
+  background: lime;
+}
+.socials .outline-button span:nth-child(4)::after {
+  bottom: 0;
+  left: 0;
+  background: orange;
+}
+.socials .outline-button span:nth-child(1) {
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+}
+.socials .outline-button span:nth-child(2) {
+  width: 4px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.socials .outline-button span:nth-child(3) {
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+}
+.socials .outline-button span:nth-child(4) {
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 50px;
+  height: 30px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+span button {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-15px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+
+span button:before,
+span button:after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.next::after,
+.next::before {
+  content: "Next";
+}
+
+.prev::after,
+.prev::before {
+  content: "Prev";
+}
+
+span button:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(15px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+span button:after {
+  color: #000;
+  background: #fff;
+  transform: rotateX(90deg) translateZ(15px);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+span button:hover {
+  transform: translateZ(-15px) rotateX(-90deg);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.container .title h2 {
+  margin: 0;
+}
+
+.errorPage {
+  background-color: #354a5f;
+  position: relative;
+  isolation: isolate;
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.errorPage::before {
+  content: "";
+  position: fixed;
+  height: 120%;
+  width: 10rem;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-color: #283848;
+  overflow-x: hidden;
+  box-shadow: -10rem 0 0 #2a3b4c, -20rem 0 0 #2b3d4f, -30rem 0 0 #2d4052, -40rem 0 0 #2f4256, -50rem 0 0 #314559;
+  transform-origin: bottom right;
+  transform: rotate(5deg);
+}
+.errorPage .content {
+  padding-block: 4rem;
+  padding-inline: 0.5rem;
+  color: #7cd5de;
+  text-align: center;
+  font-size: 125%;
+  max-width: 400px;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 520px) {
+  .errorPage .content {
+    padding-inline: 8rem;
+  }
+}
+.errorPage .content p {
+  padding-inline: 0.5rem;
+}
+@media screen and (min-width: 520px) {
+  .errorPage .content p {
+    padding-inline: 4rem;
+  }
+}
+.errorPage .content button {
+  border-radius: 0.5rem;
+  border: none;
+  background: none;
+  font-weight: bold;
+  font-size: 105%;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+.errorPage .content button a {
+  color: inherit;
+  text-decoration: none;
+}
+.errorPage .content button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #7cd5de;
+  transition: transform 150ms ease;
+  transform-origin: left;
+  transform: scaleX(0.1);
+}
+.errorPage .content button:hover::after {
+  transform: scaleX(1);
+}
+.errorPage::after {
+  content: "404";
+  overflow: hidden;
+  position: absolute;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  inset: 0;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  font-size: 20rem;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #243342;
+  text-shadow: -1px -1px #354a5f, -2px -2px #354a5f, -3px -3px #354a5f, -4px -4px #354a5f, -5px -5px #354a5f, 1px 1px #121a21, 2px 2px #121a21, 3px 3px #121a21, 4px 4px #121a21, 5px 5px #121a21;
+}
+@media screen and (max-width: 560px) {
+  .errorPage::after {
+    font-size: 50vw;
+  }
+}
+
+.loadingPage {
+  background-color: #354a5f;
+  position: relative;
+  isolation: isolate;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #7cd5de;
+}
+.loadingPage::before {
+  content: "";
+  position: fixed;
+  height: 120%;
+  width: 10rem;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-color: #283848;
+  overflow-x: hidden;
+  box-shadow: -10rem 0 0 #2a3b4c, -20rem 0 0 #2b3d4f, -30rem 0 0 #2d4052, -40rem 0 0 #2f4256, -50rem 0 0 #314559;
+  transform-origin: bottom right;
+  transform: rotate(5deg);
+}
+.loadingPage svg {
+  stroke: #7cd5de;
+}
+.loadingPage svg path {
+  stroke: #7cd5de;
+  fill: #7cd5de;
+}
+.loadingPage .text {
+  display: flex;
+  align-items: center;
+  margin-block: 2rem;
+}
+.loadingPage .text h1 {
+  margin: 0;
+}
+.loadingPage .text svg {
+  width: 40px;
+  margin-top: auto;
+  fill: #7cd5de;
+}
+.loadingPage .text svg circle {
+  fill: #7cd5de;
+}/*# sourceMappingURL=index.css.map */

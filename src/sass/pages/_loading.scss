@@ -1,0 +1,35 @@
+.loadingPage {
+  @include gradientBackground;
+  @include fullscreenPage;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: $font-color-light;
+
+  svg {
+    stroke: $font-color-light;
+    path {
+      stroke: $font-color-light;
+      fill: $font-color-light;
+    }
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    margin-block: 2rem;
+    h1 {
+      margin: 0;
+    }
+    svg {
+      width: 40px;
+      margin-top: auto;
+      fill: $font-color-light;
+      circle {
+        fill: $font-color-light;
+      }
+    }
+  }
+}
