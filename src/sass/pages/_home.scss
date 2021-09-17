@@ -6,10 +6,14 @@
   justify-content: center;
   .title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
     h2 {
+      color: $clr-accent-0;
       margin: 0;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 $clr-accent-2, -1px 1px 0 $clr-accent-2,
+        1px -1px 0 $clr-accent-2, 1px 1px 0 $clr-accent-2, 0 0 20px #000;
     }
   }
 }

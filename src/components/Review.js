@@ -28,22 +28,21 @@ const Review = () => {
   console.log(image)
   return (
     <article className='review'>
-      <div className='img-container'>
-        <img src={image} alt={name} className='person-img' />
-        <span className='quote-icon'>
-          <FaQuoteRight />
-        </span>
+      <div className="cardHeader">
+        <div className='img-container'>
+          <img src={image} alt={name} className='person-img' />
+          <span className='quote-icon'>
+            <FaQuoteRight />
+          </span>
+        </div>
       </div>
       <h4 className='author'>{name}</h4>
       <p className='info'>{text}</p>
 
       
       <div className="socials">
-        <button>Github</button>
-        <div className="outline-button">
-          <span/><span/><span/><span/>
-          HOVER ME
-        </div>
+        <button><a hred="https://westmec.com">Github</a></button>
+        <button><a hred="https://westmec.com">Recent Project</a></button>
       </div>
 
       <div className='button-container'>

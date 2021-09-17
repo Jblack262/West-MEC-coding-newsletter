@@ -162,12 +162,6 @@ button {
   cursor: pointer;
 }
 
-button,
-input[type=button] {
-  width: auto;
-  overflow: hidden;
-}
-
 .ie7 img {
   -ms-interpolation-mode: bicubic;
 }
@@ -180,21 +174,30 @@ input[type=button] {
 
 .review {
   width: clamp(40%, 520px, 90%);
-  background-color: #ababab;
+  background-color: #ddd;
   border-radius: 1rem;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  isolation: isolate;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px #00000077;
+}
+.review .cardHeader {
+  background: #f39c12;
+  height: 7rem;
+  margin-bottom: 6rem;
+  border-bottom: 0.5rem solid #f7911d;
+  box-shadow: 0 5px 10px #00000077;
 }
 .review .img-container {
   position: relative;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  margin: 0 auto;
-  box-shadow: 0.5rem -0.25rem 0 lightblue;
+  margin: 2rem auto;
+  box-shadow: 5px 10px 10px #00000055, 0 -5px 35px #d15400;
 }
 .review .img-container .person-img {
   width: 100%;
@@ -204,6 +207,7 @@ input[type=button] {
      object-fit: cover;
   border-radius: 50%;
   position: relative;
+  border: 0.5rem solid #f7911d;
 }
 .review .img-container .quote-icon {
   position: absolute;
@@ -215,8 +219,9 @@ input[type=button] {
   place-items: center;
   border-radius: 50%;
   transform: translateY(25%);
-  background: lightblue;
-  color: black;
+  background: #f7911d;
+  color: white;
+  box-shadow: -2.5px -2.5px 30px #d15400;
 }
 
 .author {
@@ -229,97 +234,70 @@ input[type=button] {
   max-width: 400px;
 }
 
-.button-container {
-  margin: 0.5rem 0;
+.info {
+  margin-top: 2rem;
 }
 
-.socials .outline-button {
-  background: none;
-  box-sizing: content-box;
-  width: 100px;
-  height: 40px;
-  margin: 0 1rem;
-  display: grid;
-  place-items: center;
+.button-container {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+.socials button {
+  border: none;
+  outline: none;
+  background: #ddd;
+  padding: 0.5rem 2rem;
+  margin: 0;
   position: relative;
 }
-.socials .outline-button span {
+.socials button a {
+  position: relative;
+  z-index: 3;
+  color: black;
+  font-weight: bold;
+  font-size: 1.15rem;
+  text-decoration: underline;
+  transition: color 150ms linear;
+}
+.socials button:hover a {
+  transition-delay: 300ms;
+  color: white;
+}
+.socials button::after {
   position: absolute;
-  margin: 0;
-  background: #99999966;
-}
-.socials .outline-button span::after {
-  position: fixed;
   content: "";
-  width: 4px;
-  height: 4px;
-  background: red;
-  border-radius: 50%;
+  inset: -0.1rem 0.25rem -0.1rem 0.25rem;
+  background: #f39c12;
+  z-index: -1;
+  transition: transform 300ms ease;
+  transform: scaleX(0);
 }
-.socials .outline-button span:nth-child(1)::after {
-  top: 0;
-  left: 0;
-  background: pink;
-  -webkit-animation: top 0.5s linear;
-          animation: top 0.5s linear;
+.socials button::before {
+  position: absolute;
+  content: "";
+  inset: -0.1rem 0 -0.1rem 0;
+  background: #f39c12;
+  border-radius: 0.4rem;
+  transition: transform 300ms ease;
+  transform-origin: bottom;
+  transform: scaleY(0);
 }
-@-webkit-keyframes top {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 96px;
-  }
+.socials button:hover::before {
+  transform-origin: top;
+  transition-delay: 300ms;
+  transform: scale(1);
 }
-@keyframes top {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 96px;
-  }
-}
-.socials .outline-button span:nth-child(2)::after {
-  top: 0;
-  right: 0;
-  background: blue;
-}
-.socials .outline-button span:nth-child(3)::after {
-  bottom: 0;
-  right: 0;
-  background: lime;
-}
-.socials .outline-button span:nth-child(4)::after {
-  bottom: 0;
-  left: 0;
-  background: orange;
-}
-.socials .outline-button span:nth-child(1) {
-  width: 100%;
-  height: 4px;
-  top: 0;
-  left: 0;
-}
-.socials .outline-button span:nth-child(2) {
-  width: 4px;
-  height: 100%;
-  top: 0;
-  right: 0;
-}
-.socials .outline-button span:nth-child(3) {
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  left: 0;
-}
-.socials .outline-button span:nth-child(4) {
-  width: 4px;
-  height: 100%;
-  top: 0;
-  left: 0;
+.socials button:hover::after {
+  transform: scale(1);
 }
 
-span {
+.button-container span {
   position: relative;
   display: inline-flex;
   width: 50px;
@@ -328,7 +306,7 @@ span {
   perspective: 1000px;
 }
 
-span button {
+.button-container span button {
   cursor: pointer;
   width: 50px;
   height: 30px;
@@ -343,8 +321,8 @@ span button {
   font-family: "Montserrat", sans-serif;
 }
 
-span button:before,
-span button:after {
+.button-container span button:before,
+.button-container span button:after {
   position: absolute;
   inset: 0;
   display: flex;
@@ -365,7 +343,7 @@ span button:after {
   content: "Prev";
 }
 
-span button:before {
+.button-container span button:before {
   color: #fff;
   background: #000;
   transform: rotateY(0deg) translateZ(15px);
@@ -373,7 +351,7 @@ span button:before {
   border-top-right-radius: 0;
 }
 
-span button:after {
+.button-container span button:after {
   color: #000;
   background: #fff;
   transform: rotateX(90deg) translateZ(15px);
@@ -381,7 +359,7 @@ span button:after {
   border-bottom-right-radius: 0;
 }
 
-span button:hover {
+.button-container span button:hover {
   transform: translateZ(-15px) rotateX(-90deg);
 }
 
@@ -394,11 +372,14 @@ span button:hover {
 }
 .container .title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 1rem 0;
 }
 .container .title h2 {
+  color: #f39c12;
   margin: 0;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #d15400, -1px 1px 0 #d15400, 1px -1px 0 #d15400, 1px 1px 0 #d15400, 0 0 20px #000;
 }
 
 .errorPage {

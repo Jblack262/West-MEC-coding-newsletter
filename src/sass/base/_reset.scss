@@ -56,7 +56,7 @@ q {
   quotes: none;
   &::before,
   &::after {
-    content: "";
+    content: '';
     content: none;
   }
 }
@@ -101,16 +101,16 @@ pre {
   word-wrap: break-word;
 }
 
-input [type="radio"] {
+input [type='radio'] {
   vertical-align: text-bottom;
 }
-input [type="checkbox"] {
+input [type='checkbox'] {
   vertical-align: bottom;
 }
-.ie7 input [type="checkbox"] {
+.ie7 input [type='checkbox'] {
   vertical-align: baseline;
 }
-.ie6 input[type="checkbox"] {
+.ie6 input[type='checkbox'] {
   vertical-align: text-bottom;
 }
 
@@ -146,19 +146,19 @@ sub {
 
 .clickable,
 label,
-input[type="button"],
-input[type="submit"],
-input[type="file"],
+input[type='button'],
+input[type='submit'],
+input[type='file'],
 button {
   cursor: pointer;
 }
 
 //fix button for IE7
-button,
-input[type="button"] {
-  width: auto;
-  overflow: hidden;
-}
+// button,
+// input[type='button'] {
+//   width: auto;
+//   overflow: hidden;
+// }
 
 //fix scalable images for IE7
 .ie7 img {
@@ -167,7 +167,7 @@ input[type="button"] {
 
 //fixing conatiner collapse
 .clearfix::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
