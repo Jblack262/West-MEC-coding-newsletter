@@ -39,7 +39,7 @@ const Review = () => {
       <h4 className='author'>{name}</h4>
       <p className='info'>{text}</p>
 
-      
+
       <div className="socials">
         <button><a hred="https://westmec.com">Github</a></button>
         <button><a hred="https://westmec.com">Recent Project</a></button>

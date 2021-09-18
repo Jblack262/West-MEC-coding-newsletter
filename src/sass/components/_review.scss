@@ -1,11 +1,13 @@
 .review {
-  width: clamp(40%, 520px, 90%);
+  width: clamp(35%, 520px, 90%);
+  max-width: 800px;
+  min-height: 520px;
   background-color: #ddd;
   border-radius: 1rem;
   // padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   isolation: isolate;
   overflow: hidden;
@@ -66,21 +68,28 @@
 }
 
 .button-container {
-  margin: 0.5rem 0 1rem 0;
+  margin: auto 0 1rem 0;
 }
 
 .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0.25rem;
-  margin-bottom: 2rem;
+  margin-top: auto;
   button {
-    border: none;
+    border: 1px solid #00000077;
+    border-radius: 0.4rem;
+
+    box-sizing: border-box;
     outline: none;
     background: #ddd;
 
     padding: 0.5rem 2rem;
     margin: 0;
+    &:hover {
+      border-color: transparent;
+    }
 
     a {
       position: relative;
@@ -114,9 +123,9 @@
     &::before {
       position: absolute;
       content: '';
-      inset: -0.1rem 0 -0.1rem 0;
+      inset: -0.1rem -0.1rem -0.1rem -0.1rem;
       background: $clr-accent-0;
-      border-radius: 0.4rem;
+      border-radius: inherit;
       // z-index: -1;
 
       transition: transform 300ms ease;
@@ -171,11 +180,11 @@
 }
 .next::after,
 .next::before {
-  content: 'Next';
+  content: '>';
 }
 .prev::after,
 .prev::before {
-  content: 'Prev';
+  content: '<';
 }
 .button-container span button:before {
   color: #fff;
