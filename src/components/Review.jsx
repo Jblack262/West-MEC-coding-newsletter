@@ -27,23 +27,21 @@ const Review = () => {
   };
   console.log(image)
   return (
+    <div className="reviewContainer">
     <article className='review'>
       <div className="cardHeader">
         <div className='img-container'>
+          <div className="image">
           <img src={image} alt={name} className='person-img' />
+          </div>
           <span className='quote-icon'>
             <FaQuoteRight />
           </span>
         </div>
       </div>
+      
       <h4 className='author'>{name}</h4>
       <p className='info'>{text}</p>
-
-
-      <div className="socials">
-        <button><a hred="https://westmec.com">Github</a></button>
-        <button><a hred="https://westmec.com">Recent Project</a></button>
-      </div>
 
       <div className='button-container'>
         <span onClick={prevPerson}>
@@ -53,7 +51,12 @@ const Review = () => {
           <button className="next" />
         </span>
       </div>
+      
     </article>
+      <div className="navContainer">
+
+      </div>
+    </div>
   );
 };
 

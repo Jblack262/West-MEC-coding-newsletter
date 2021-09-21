@@ -1,11 +1,13 @@
-@import './themes/defaultTheme';
-@import './util/mixins';
+@import "./themes/defaultTheme";
+@import "./util/mixins";
+@import "./util/variables";
+@import "./util/background";
 
-@import './base/global';
-@import './base/reset';
+@import "./base/global";
+@import "./base/reset";
 
-@import './components/review';
+@import "./components/review";
 
-@import './pages/home';
-@import './pages/error';
-@import './pages/loading';
+@import "./pages/home";
+@import "./pages/error";
+@import "./pages/loading";
