@@ -1,79 +1,93 @@
-.reviewContainer {
+.review {
   width: clamp(35%, 520px, 90%);
   text-align: center;
-  .review {
-    width: 100%;
-    min-height: 350px;
-    background-color: $clr-gray-0;
+  min-height: 350px;
+  background-color: $clr-gray-0;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  overflow: hidden;
+
+  box-shadow: inset $dark-shadow, $light-shadow;
+  .cardHeader {
+    background-color: $clr-accent-0;
     display: flex;
-    flex-direction: column;
-    border-radius: $radius;
-    overflow: hidden;
+    // place-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    height: 6.5rem;
+    box-sizing: border-box;
+    border-bottom: 0.5rem solid $clr-accent-1;
+    margin-bottom: 5em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
-    box-shadow: inset $dark-shadow, $light-shadow;
-    .cardHeader {
-      background-color: $clr-accent-0;
-      display: flex;
-      // place-items: center;
-      justify-content: center;
-      border-radius: inherit;
-      height: 6.5rem;
-      box-sizing: border-box;
-      border-bottom: 0.5rem solid $clr-accent-1;
-      margin-bottom: 5em;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-
-      box-shadow: $dark-shadow;
-      .img-container {
+    box-shadow: $dark-shadow;
+    .img-container {
+      width: 10rem;
+      height: 10rem;
+      position: relative;
+      margin-block: 1rem;
+      .image {
+        overflow: hidden;
+        border-radius: 50%;
+        border: 0.5rem solid $clr-accent-1;
+        box-sizing: border-box;
         width: 10rem;
         height: 10rem;
-        position: relative;
-        margin-block: 1rem;
-        .image {
-          overflow: hidden;
-          border-radius: 50%;
-          border: 0.5rem solid $clr-accent-1;
-          box-sizing: border-box;
-          width: 10rem;
-          height: 10rem;
-          display: flex;
-          align-items: center;
-          .person-img {
-            min-width: 100%;
-            height: auto;
+        display: flex;
+        align-items: center;
+        .person-img {
+          min-width: 100%;
+          height: auto;
 
-            display: block;
-          }
+          display: block;
         }
       }
-      .quote-icon {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        display: grid;
-        place-items: center;
-        background-color: $clr-accent-1;
-        border-radius: 50%;
-        left: 0;
-        top: 0;
-        margin: 0.25rem;
+    }
+    .btnContainer {
+      width: calc(100% / 3);
+      display: grid;
+      place-items: center;
+      font-size: clamp(0.6rem, 2.5vw, 1.25rem);
+      margin: 0 auto;
+      a {
+        color: black;
+        text-decoration: none;
+        border-radius: $radius / 2;
+        border: 1px solid;
+        background: none;
+        // font-size: 1.25rem;
+        padding: 0.35em 1.2em;
       }
     }
-    .author,
-    .info {
-      margin: 1rem auto 2rem auto;
-      max-width: 70%;
-      width: clamp(70%, 350px, 90%);
+    .quote-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      background-color: $clr-accent-1;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+      margin: 0.25rem;
     }
-    .author {
-      margin: 0 auto;
-      text-transform: capitalize;
-      font-size: 1.25rem;
-    }
-    .button-container {
-      margin-top: auto;
-    }
+  }
+
+  .author,
+  .info {
+    margin: 1rem auto 2rem auto;
+    max-width: 70%;
+    width: clamp(70%, 350px, 90%);
+  }
+  .author {
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+  }
+  .button-container {
+    margin-top: auto;
   }
 }
 
@@ -110,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid black;
+  border: 5px solid $clr-accent-1;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -124,14 +138,14 @@
 }
 .button-container span button:before {
   color: #fff;
-  background: #000;
+  background: $clr-gray-9;
   transform: rotateY(0deg) translateZ(15px);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 .button-container span button:after {
   color: #000;
-  background: #fff;
+  background: $clr-gray-0;
   transform: rotateX(90deg) translateZ(15px);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;

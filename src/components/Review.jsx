@@ -27,9 +27,11 @@ const Review = () => {
   };
   console.log(image)
   return (
-    <div className="reviewContainer">
     <article className='review'>
       <div className="cardHeader">
+          <div className="btnContainer">
+          <a href="#">Github</a>
+          </div>
         <div className='img-container'>
           <div className="image">
           <img src={image} alt={name} className='person-img' />
@@ -38,6 +40,9 @@ const Review = () => {
             <FaQuoteRight />
           </span>
         </div>
+          <div className="btnContainer">
+          <a href="#">Recent Work</a>
+          </div>
       </div>
       
       <h4 className='author'>{name}</h4>
@@ -53,10 +58,6 @@ const Review = () => {
       </div>
       
     </article>
-      <div className="navContainer">
-
-      </div>
-    </div>
   );
 };
 
