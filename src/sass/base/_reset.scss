@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  // font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
   // background-position: transparent;
@@ -38,7 +38,7 @@ html {
 img,
 object,
 embed {
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
 }
 
@@ -56,7 +56,7 @@ q {
   quotes: none;
   &::before,
   &::after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -101,16 +101,16 @@ pre {
   word-wrap: break-word;
 }
 
-input [type='radio'] {
+input [type="radio"] {
   vertical-align: text-bottom;
 }
-input [type='checkbox'] {
+input [type="checkbox"] {
   vertical-align: bottom;
 }
-.ie7 input [type='checkbox'] {
+.ie7 input [type="checkbox"] {
   vertical-align: baseline;
 }
-.ie6 input[type='checkbox'] {
+.ie6 input[type="checkbox"] {
   vertical-align: text-bottom;
 }
 
@@ -146,9 +146,9 @@ sub {
 
 .clickable,
 label,
-input[type='button'],
-input[type='submit'],
-input[type='file'],
+input[type="button"],
+input[type="submit"],
+input[type="file"],
 button {
   cursor: pointer;
 }
@@ -167,7 +167,7 @@ button {
 
 //fixing conatiner collapse
 .clearfix::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }

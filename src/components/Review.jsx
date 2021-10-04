@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import people from '../util/data';
-import { FaQuoteRight } from 'react-icons/fa';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, image, text } = people[index];
@@ -25,38 +25,21 @@ const Review = () => {
       return checkNumber(newIndex);
     });
   };
-  console.log(image)
   return (
     <article className='review'>
-      <div className="cardHeader">
-          <div className="btnContainer">
-          <a href="#">Github</a>
-          </div>
-        <div className='img-container'>
-          <div className="image">
-          <img src={image} alt={name} className='person-img' />
-          </div>
-          <span className='quote-icon'>
-            <FaQuoteRight />
-          </span>
-        </div>
-          <div className="btnContainer">
-          <a href="#">Recent Work</a>
-          </div>
+      <div className="imgContainer">
+        <img src={image} alt={name} />
       </div>
-      
-      <h4 className='author'>{name}</h4>
-      <p className='info'>{text}</p>
-
-      <div className='button-container'>
-        <span onClick={prevPerson}>
-          <button className="prev" />
-        </span>
-        <span onClick={nextPerson}>
-          <button className="next" />
-        </span>
+      <h1>{name}</h1>
+      <p>{text}</p>
+      <div className="btnContainer">
+        <button>Github</button>
+        <button>Recent</button>
       </div>
-      
+      <div className="arrowContainer">
+        <AiOutlineArrowLeft className="arrow left" onClick={() => prevPerson()}/>
+        <AiOutlineArrowRight className="arrow right" onClick={() => nextPerson()}/>
+      </div>
     </article>
   );
 };

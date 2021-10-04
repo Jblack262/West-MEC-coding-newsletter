@@ -1,16 +1,14 @@
 import React from 'react';
 import Review from './components/Review';
+
+import Navbar from './components/Navbar'
 function App() {
   return (
-    <main>
-      <section className='container'>
-        <div className='title'>
-          <h2>West-Mec NEC</h2>
-          <h2>Coding News Letter</h2>
-          <div className='underline'></div>
-        </div>
+    <main className="app">
+      <Navbar />
+      <div className="container">
         <Review />
-      </section>
+      </div>
     </main>
   );
 }
