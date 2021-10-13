@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 function Navbar() {
+    const [open, setOpen] = useState(false);
     return (
         <nav>
-            <h2>West-Mec NEC</h2>
-            <h2>Coding News Letter</h2>
+            <div className="row">
+                <div className="imgContainer">
+                    <img src={require("../Student_Portraits/Coding_blue.png")} alt="" />
+                </div>
+                <GiHamburgerMenu className="menuButton" onClick={() => setOpen(!open)}/>
+            </div>
+            <ul className={"links " + (open ? "open" : "")}>
+                <li>
+                    <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+                </li>
+                <li>
+                    <Link to="/blog" onClick={() => setOpen(false)}>Blog</Link>
+                </li>
+            </ul>
         </nav>
     )
 }
