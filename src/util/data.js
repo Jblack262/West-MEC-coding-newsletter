@@ -179,4 +179,40 @@ const reviews = [
   },
 ];
 
-export default reviews;
+const blogPosts = [
+  {
+    id: 1,
+    month: 'August',
+    year: "2021",
+    img: require("../Student_Portraits/Coding_blue.png"),
+    title: "This is a cool title",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+  },
+  {
+    id: 2,
+    month: 'September',
+    year: "2021",
+    title: "This is a cool title",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+  },
+  {
+    id: 3,
+    month: 'October',
+    year: "2021",
+    img: require("../Student_Portraits/Alexander Welton.jpg"),
+    title: "This is a cool title",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+  },
+  {
+    id: 4,
+    month: 'November',
+    year: "2021",
+    title: "This is a cool title",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+  },
+]
+
+export {
+  reviews,
+  blogPosts
+};

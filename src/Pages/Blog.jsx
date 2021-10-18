@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import BlogPost from '../components/BlogPost'
+import {blogPosts} from '../util/data';
 
 function Blog() {
     return (
-        <div>
-            <h1>Blog Page</h1>
+        <div className="blogPage">
+            {blogPosts.reverse().map((post) => { //reversed so newest posts come first
+                return (
+                    <BlogPost key={post.id} post={post}/>
+                )
+            })}
         </div>
     )
 }
