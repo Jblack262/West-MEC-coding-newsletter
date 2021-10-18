@@ -177,6 +177,14 @@ const reviews = [
     recent: "",
     github: "",
   },
+  {
+    id: 23,
+    name: 'Gianna Marotta',
+    image: require("../Student_Portraits/Gianna Marotta.jpg"),
+    text: 'Gianna Marotta',
+    recent: "",
+    github: "",
+  },
 ];
 
 const blogPosts = [
