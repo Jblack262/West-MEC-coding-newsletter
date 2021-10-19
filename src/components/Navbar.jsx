@@ -7,9 +7,9 @@ function Navbar() {
     return (
         <nav>
             <div className="row">
-                <div className="imgContainer">
+                <Link to="/" className="imgContainer">
                     <img src={require("../Student_Portraits/Coding_blue.png")} alt="" />
-                </div>
+                </Link>
                 <GiHamburgerMenu className="menuButton" onClick={() => setOpen(!open)}/>
             </div>
             <ul className={"links " + (open ? "open" : "")}>
