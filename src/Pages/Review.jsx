@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {reviews} from '../util/data';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { Helmet } from 'react-helmet';
+
 const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, image, text, recent, github } = reviews[index];
@@ -27,14 +29,17 @@ const Review = () => {
   };
   return (
     <article className='review'>
+      <Helmet>
+          <title>Coding Newsletter</title>
+      </Helmet>
       <div className="imgContainer">
         <img src={image} alt={name} />
       </div>
       <h1>{name}</h1>
       <p>{text}</p>
       <div className="btnContainer">
-        <a href={github}>GitHub</a>
-        <a href={recent}>Recent</a>
+        <a href={`https://github.com/${github}`} target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href={recent} target="_blank" rel="noopener noreferrer">Recent</a>
       </div>
       <div className="arrowContainer">
         <button onClick={() => prevPerson()} className="arrow left"><AiOutlineArrowLeft/></button>
