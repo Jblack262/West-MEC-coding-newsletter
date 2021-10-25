@@ -191,9 +191,9 @@ const blogPosts = [
     id: 3,
     month: 'October',
     year: "2021",
-    img: require("../Student_Portraits/Alexander Welton.jpg"),
-    title: "Welcome Tech-Tober",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+    img: require("../Student_Portraits/st.marys 10-23.jpg"),
+    title: "October Successes",
+    content: "This Tech-tober has been an AMAZING Success for West-MEC NEC Coding. Alexander Welton's Designs for T-Shirts/Hoodies/Backpacks were so amazing we have over $300 is re-orders. We also complete our first of many comminity service events at St. Mary's Food Bank",
   },
   {
     id: 4,
