@@ -184,6 +184,7 @@ const blogPosts = [
     id: 2,
     month: 'September',
     year: "2021",
+    img: require("../Student_Portraits/students at work.jpg"),
     title: "Coding Students at work",
     content: "Year 2 students are taking their time with their summer amnesia but JS review is going well. Year 1 students are learning webdesign and JS basics and doing GREAT!!!",
   },
