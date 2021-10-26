@@ -27,7 +27,7 @@ const reviews = [
   {
     id: 4,
     name: 'Ethan Roldan',
-    image: require("../Student_Portraits/Ethan Roldan.jpg"),
+    image: require("../Student_Portraits/Ethan Roldan2.jpg"),
     text: 'FBLA President. A hard-worker and great programmer. Please check out what he’s accomplished.',
     recent: "https://roldanreactminesweeper.netlify.app/",
     github: "TheCapn-MEC",
@@ -68,7 +68,7 @@ const reviews = [
   {
     id: 9,
     name: 'Lily Zalit',
-    image: require("../Student_Portraits/Lily Zalit.jpg"),
+    image: require("../Student_Portraits/Lily Zalit2.jpg"),
     text: 'FBLA Vice President of Fundraising. She designs great websites and really knows how to make a sale.',
     recent: "https://lzalit238-react-accordian-project.netlify.app/",
     github: "lzalit238",
