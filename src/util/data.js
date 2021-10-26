@@ -68,7 +68,7 @@ const reviews = [
   {
     id: 9,
     name: 'Lily Zalit',
-    image: require("../Student_Portraits/Lily Zalit2.jpg"),
+    image: require("../Student_Portraits/Lily Zalit2.jpeg"),
     text: 'FBLA Vice President of Fundraising. She designs great websites and really knows how to make a sale.',
     recent: "https://lzalit238-react-accordian-project.netlify.app/",
     github: "lzalit238",
