@@ -200,8 +200,9 @@ const blogPosts = [
     id: 4,
     month: 'November',
     year: "2021",
-    title: "Still to Come...",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+    img: require("../Student_Portraits/NEC safety.png"),
+    title: "Coding + Safety",
+    content: "Students will be putting on an Internet Safety Event on November 13th Parents, Students and Friends are welcome.",
   },
 ]
 
