@@ -13,7 +13,7 @@ const reviews = [
     name: 'Andrew Makris',
     image: require("../Student_Portraits/Andrew Makris.jpg"),
     text: 'He’s quiet, talented, and certainly hard working. Please check out his work.',
-    recent: "https://angry-jones-481c91.netlify.app/",
+    recent: "https://tender-beaver-d56329.netlify.app/",
     github: "Amakris12",
   },
   {
@@ -29,7 +29,7 @@ const reviews = [
     name: 'Ethan Roldan',
     image: require("../Student_Portraits/Ethan Roldan2.jpg"),
     text: 'FBLA President. A hard-worker and great programmer. Please check out what he’s accomplished.',
-    recent: "https://roldanreactminesweeper.netlify.app/",
+    recent: "https://multi-api-boley.netlify.app/",
     github: "TheCapn-MEC",
   },
   {
