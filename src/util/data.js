@@ -13,7 +13,7 @@ const reviews = [
     name: 'Andrew Makris',
     image: require("../Student_Portraits/Andrew Makris.jpg"),
     text: 'Quiet talented and hardworking programmer please check out his work',
-    recent: "https://angry-jones-481c91.netlify.app/",
+    recent: "https://tender-beaver-d56329.netlify.app/",
     github: "Amakris12",
   },
   {
@@ -21,7 +21,7 @@ const reviews = [
     name: 'Barik Boley',
     image: require("../Student_Portraits/Barik Boley.jpg"),
     text: 'Fantastic Programmer and future Business Tycoon I look forward to see his accomplishments P.S. dont forget MR. B gets 10%',
-    recent: "https://reviews-react-boley.netlify.app/",
+    recent: "https://multi-api-boley.netlify.app/",
     github: "xBarikadex",
   },
   {
@@ -29,7 +29,7 @@ const reviews = [
     name: 'Ethan Roldan',
     image: require("../Student_Portraits/Ethan Roldan.jpg"),
     text: 'FBLA President, hardworker and Great programmer please check out what he has accomplished',
-    recent: "https://roldanreactminesweeper.netlify.app/",
+    recent: "https://ethanroldanportfolio.netlify.app/",
     github: "TheCapn-MEC",
   },
   {
