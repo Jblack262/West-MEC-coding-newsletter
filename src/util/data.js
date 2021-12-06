@@ -107,14 +107,6 @@ const reviews = [
   },
   {
     id: 14,
-    name: 'Keven Beck',
-    image: require("../Student_Portraits/Keven Beck.jpg"),
-    text: 'Track athlete, programmer, and random fact connoisseur.',
-    recent: "https://keven82105.github.io/pizza-pro/",
-    github: "keven82105",
-  },
-  {
-    id: 15,
     name: 'Logan Rubenstein',
     image: require("../Student_Portraits/Logan Rubenstein.jpg"),
     text: "He's a great programmer with major success in the program. Also slightly addicted to Big Chungus.",
@@ -122,7 +114,7 @@ const reviews = [
     github: "B1gChungus",
   },
   {
-    id: 16,
+    id: 15,
     name: 'Louis Win',
     image: require("../Student_Portraits/Louis Win.jpg"),
     text: 'FBLA Treasurer. A great programmer with success in the program despite getting distracted here and there',
@@ -130,7 +122,7 @@ const reviews = [
     github: "lwin496",
   },
   {
-    id: 17,
+    id: 16,
     name: 'Matthew Holloway',
     image: require("../Student_Portraits/Matthew Holloway.jpg"),
     text: 'He’s a quiet but rather talented programmer making some quality websites.',
@@ -138,7 +130,7 @@ const reviews = [
     github: "mattholloway04",
   },
   {
-    id: 18,
+    id: 17,
     name: 'Roger Grange',
     image: require("../Student_Portraits/Roger Grange.jpg"),
     text: 'Roger Roger... is a doing great making retro games for FBLA and FUN!!!',
@@ -146,7 +138,7 @@ const reviews = [
     github: "RogerRandomDev",
   },
   {
-    id: 19,
+    id: 18,
     name: 'TJ Anderson',
     image: require("../Student_Portraits/Thomas Anderson.jpg"),
     text: 'TJ has learned a lot, watching his growth has been a joy to watch check out what he has been up to.',
@@ -154,7 +146,7 @@ const reviews = [
     github: "Tj5150",
   },
   {
-    id: 20,
+    id: 19,
     name: 'Victor Malhorta',
     image: require("../Student_Portraits/Victor Malhorta.jpg"),
     text: 'Victor is a talented programmer and will be doing even greater things soon enough',
@@ -162,7 +154,7 @@ const reviews = [
     github: "VictorMal001",
   },
   {
-    id: 21,
+    id: 20,
     name: 'Gianna Marotta',
     image: require("../Student_Portraits/Gianna Marotta.jpg"),
     text: 'While it took a while to catch up since the transfer Gianna has done a fantastic job in coding check out what she has been working on.',
@@ -203,6 +195,14 @@ const blogPosts = [
     img: require("../Student_Portraits/NEC safety.png"),
     title: "Coding + Safety",
     content: "Students will be putting on an Internet Safety Event on November 13th Parents, Students and Friends are welcome.",
+  },
+  {
+    id: 5,
+    month: 'December',
+    year: "2021",
+    img: require("../Student_Portraits/Dec-blog.png"),
+    title: "Coding to All Ages",
+    content: "Future Coding students visted our program to take a look at what our Program had to offer and our students were great \n Please check out our students new work",
   },
 ]
 
