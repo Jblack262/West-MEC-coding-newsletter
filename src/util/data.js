@@ -150,7 +150,7 @@ const reviews = [
     name: 'Victor Malhorta',
     image: require("../Student_Portraits/Victor Malhorta.jpg"),
     text: 'Victor is a talented programmer and will be doing even greater things soon enough',
-    recent: "https://victormal001.github.io/sci-floors/",
+    recent: "https://victormal001.github.io/My-Portfolio/index.html",
     github: "VictorMal001",
   },
   {
