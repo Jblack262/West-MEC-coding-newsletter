@@ -7,6 +7,7 @@ const reviews = [
     text: "He has made many pieces of art to contribute to the program. This includes the main logo worn on the coding program T-shirts.",
     recent: "https://potato-weather-2.netlify.app/",
     github: "SchoolPotato",
+    year: 2,
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const reviews = [
     text: 'He’s quiet, talented, and certainly hard working. Please check out his work.',
     recent: "https://tender-beaver-d56329.netlify.app/",
     github: "Amakris12",
+    year: 2,
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ const reviews = [
     text: 'Fantastic Programmer and future Business Tycoon I look forward to see his accomplishments P.S. dont forget MR. B gets 10%',
     recent: "https://multi-api-boley.netlify.app/",
     github: "xBarikadex",
+    year: 2,
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ const reviews = [
     text: 'FBLA President. A hard-worker and great programmer. Please check out what he’s accomplished.',
     recent: "https://ethanroldanportfolio.netlify.app/",
     github: "TheCapn-MEC",
+    year: 2,
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ const reviews = [
     text: 'A smart and adaptable student that underestimates just how smart he is',
     recent: "https://xenodochial-davinci-cedcf4.netlify.app/",
     github: "Hshipp267",
+    year: 2,
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ const reviews = [
     text: 'He’s a great student. He makes the greatest websites on the planet, including this very newsletter!',
     recent: "https://jblack262.github.io/Vue-portfolio/",
     github: "jblack262",
+    year: 2,
 
   },
   {
@@ -56,6 +62,7 @@ const reviews = [
     text: 'FBLA Vice President. While he may complain about prettier in JS and grid in CSS, he is a great programmer and designer.',
     recent: "https://modest-nobel-6c9103.netlify.app/",
     github: "lgrave264",
+    year: 2,
   },
   {
     id: 8,
@@ -64,6 +71,7 @@ const reviews = [
     text: 'FBLA Historian. He’s a highly successful web developer. Please check out his Audio Synthesizer.',
     recent: "https://upbeat-agnesi-da2285.netlify.app/",
     github: "Moleso587587",
+    year: 2,
   },
   {
     id: 9,
@@ -72,6 +80,7 @@ const reviews = [
     text: 'FBLA Vice President of Fundraising. She designs great websites and really knows how to make a sale.',
     recent: "https://lzalit238-react-accordian-project.netlify.app/",
     github: "lzalit238",
+    year: 2,
   },
   {
     id: 10,
@@ -80,6 +89,7 @@ const reviews = [
     text: 'Works hard. Program harder.',
     recent: "https://mattholloway04.github.io/groupProject/",
     github: "ddrebe473",
+    year: 1,
   },
   {
     id: 11,
@@ -88,6 +98,7 @@ const reviews = [
     text: 'E-Man is a great student and web designer',
     recent: "https://keven82105.github.io/partner-project/",
     github: "demonlord6661",
+    year: 1,
   },
   {
     id: 12,
@@ -96,6 +107,7 @@ const reviews = [
     text: 'A great student that miscalulates his intelligence',
     recent: "https://victormal001.github.io/sci-floors/",
     github: "captren501",
+    year: 1,
   },
   {
     id: 13,
@@ -104,6 +116,7 @@ const reviews = [
     text: 'FBLA Vice President of Social Media. He’s a highly successful and talented programmer and web developer.',
     recent: "https://justinmelore.github.io/Sun-Company/",
     github: "JustinMelore",
+    year: 1,
   },
   {
     id: 14,
@@ -112,6 +125,7 @@ const reviews = [
     text: "He's a great programmer with major success in the program. Also slightly addicted to Big Chungus.",
     recent: "https://b1gchungus.github.io/CSS-Group-Project/",
     github: "B1gChungus",
+    year: 1,
   },
   {
     id: 15,
@@ -120,6 +134,7 @@ const reviews = [
     text: 'FBLA Treasurer. A great programmer with success in the program despite getting distracted here and there',
     recent: "https://b1gchungus.github.io/CSS-Group-Project/gallery.html",
     github: "lwin496",
+    year: 1,
   },
   {
     id: 16,
@@ -128,6 +143,7 @@ const reviews = [
     text: 'He’s a quiet but rather talented programmer making some quality websites.',
     recent: "https://mattholloway04.github.io/profilePage/",
     github: "mattholloway04",
+    year: 1,
   },
   {
     id: 17,
@@ -136,6 +152,7 @@ const reviews = [
     text: 'Roger Roger... is a doing great making retro games for FBLA and FUN!!!',
     recent: "https://rogerrandomdev.github.io/Portfolio/",
     github: "RogerRandomDev",
+    year: 1,
   },
   {
     id: 18,
@@ -144,6 +161,7 @@ const reviews = [
     text: 'TJ has learned a lot, watching his growth has been a joy to watch check out what he has been up to.',
     recent: "https://justinmelore.github.io/Sun-Company/index.html",
     github: "Tj5150",
+    year: 1,
   },
   {
     id: 19,
@@ -152,6 +170,7 @@ const reviews = [
     text: 'Victor is a talented programmer and will be doing even greater things soon enough',
     recent: "https://victormal001.github.io/My-Portfolio/index.html",
     github: "VictorMal001",
+    year: 1,
   },
   {
     id: 20,
@@ -160,6 +179,7 @@ const reviews = [
     text: 'While it took a while to catch up since the transfer Gianna has done a fantastic job in coding check out what she has been working on.',
     recent: "https://giannamar4.github.io/website-project/",
     github: "giannamar4",
+    year: 1,
   },
 ];
 

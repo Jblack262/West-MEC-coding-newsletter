@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 
 const Review = () => {
   const [index, setIndex] = useState(0);
-  const { name, image, text, recent, github } = reviews[index];
+  const { name, image, text, recent, github, year } = reviews[index];
   const checkNumber = (number) => {
     if (number > reviews.length - 1) {
       return 0;
@@ -33,7 +33,11 @@ const Review = () => {
           <title>Coding Newsletter</title>
       </Helmet>
       <div className="imgContainer">
-        <img src={image} alt={name} />
+        
+        <span>
+          <span className='badge'>Yr {year}</span>
+          <img src={image} alt={name} />
+        </span>
       </div>
       <h1>{name}</h1>
       <p>{text}</p>
