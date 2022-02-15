@@ -6,6 +6,7 @@ const reviews = [
     text: 'Quiet talented and hardworking programmer please check out his work',
     recent: "https://tender-beaver-d56329.netlify.app/",
     github: "Amakris12",
+    year: 2,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const reviews = [
     text: 'Fantastic Programmer and future Business Tycoon I look forward to see his accomplishments P.S. dont forget MR. B gets 10%',
     recent: "https://multi-api-boley.netlify.app/",
     github: "xBarikadex",
+    year: 2,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const reviews = [
     text: 'FBLA President, hardworker and Great programmer please check out what he has accomplished',
     recent: "https://ethanroldanportfolio.netlify.app/",
     github: "TheCapn-MEC",
+    year: 2,
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const reviews = [
     text: 'A smart and adaptable student and underestimates just how smart he is',
     recent: "https://xenodochial-davinci-cedcf4.netlify.app/",
     github: "Hshipp267",
+    year: 2,
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const reviews = [
     text: 'A Great student. Makes the great websites on the planet, including this one!',
     recent: "https://jblack262.github.io/Vue-portfolio/",
     github: "jblack262",
+    year: 2,
 
   },
   {
@@ -47,6 +52,7 @@ const reviews = [
     text: 'While he may complain about prettier in JS he is a great programmer and designer',
     recent: "https://modest-nobel-6c9103.netlify.app/",
     github: "lgrave264",
+    year: 2,
   },
   {
     id: 7,
@@ -55,6 +61,7 @@ const reviews = [
     text: 'FBLA Historian and highly successful web developer please check out his Audi Synthesizer',
     recent: "https://upbeat-agnesi-da2285.netlify.app/",
     github: "Moleso587587",
+    year: 2,
   },
   {
     id: 8,
@@ -63,6 +70,7 @@ const reviews = [
     text: 'A hardworking and great programmer',
     recent: "https://mattholloway04.github.io/groupProject/",
     github: "ddrebe473",
+    year: 1,
   },
   {
     id: 9,
@@ -71,6 +79,7 @@ const reviews = [
     text: 'E-Man is a great student and great webdesigner',
     recent: "https://keven82105.github.io/partner-project/",
     github: "demonlord6661",
+    year: 1,
   },
   {
     id: 10,
@@ -79,6 +88,7 @@ const reviews = [
     text: 'A smart and adaptable student and underestimates just how smart he is',
     recent: "https://victormal001.github.io/sci-floors/",
     github: "captren501",
+    year: 1,
   },
   {
     id: 11,
@@ -87,6 +97,7 @@ const reviews = [
     text: 'VP of Social Media and A highly successful and talented programmer',
     recent: "https://justinmelore.github.io/Sun-Company/",
     github: "JustinMelore",
+    year: 1,
   },
   {
     id: 12,
@@ -95,6 +106,7 @@ const reviews = [
     text: 'Logan is a great programmer that is extremely successful in the program, with a slight Chungus Addiction',
     recent: "https://b1gchungus.github.io/CSS-Group-Project/",
     github: "B1gChungus",
+    year: 1,
   },
   {
     id: 13,
@@ -103,6 +115,7 @@ const reviews = [
     text: 'FBLA Treasure and programmer Louis is doing great in the program despite getting of task every now and then ',
     recent: "https://b1gchungus.github.io/CSS-Group-Project/gallery.html",
     github: "lwin496",
+    year: 1,
   },
   {
     id: 14,
@@ -111,6 +124,7 @@ const reviews = [
     text: 'Roger Roger... is a doing great making retro games for FBLA and FUN!!!',
     recent: "https://rogerrandomdev.github.io/Portfolio/",
     github: "RogerRandomDev",
+    year: 1,
   },
   {
     id: 15,
@@ -119,6 +133,7 @@ const reviews = [
     text: 'TJ has learned a lot, watching his growth has been a joy to watch check out what he has been up to.',
     recent: "https://justinmelore.github.io/Sun-Company/index.html",
     github: "Tj5150",
+    year: 1,
   },
   {
     id: 16,
@@ -127,6 +142,7 @@ const reviews = [
     text: 'Victor is a talented programmer and will be doing even greater things soon enough',
     recent: "https://victormal001.github.io/sci-floors/",
     github: "VictorMal001",
+    year: 1,
   },
   {
     id: 17,
@@ -135,6 +151,7 @@ const reviews = [
     text: 'While it took a while to catch up since the transfer Gianna has done a fantastic job in coding check out what she has been working on.',
     recent: "https://giannamar4.github.io/portfolio/",
     github: "giannamar4",
+    year: 1,
   },
 ];
 

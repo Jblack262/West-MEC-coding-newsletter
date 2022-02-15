@@ -31,11 +31,11 @@ function BlogPost({post}) {
             {imgs.length > 1 && <button onClick={() => nextPic()}><GrFormNext /></button>}
         </div>}
         
-        <div className="navigation">
+        {imgs.length > 1 && <div className="navigation">
             {imgs.map((img, index) => {
-                return <div className={"navigation-bar" + (currentImg == index ? " active" : "")} id={index} onClick={() => setCurrentImg(index)}/>
+                return <div className={"navigation-bar" + (currentImg === index ? " active" : "")} id={index} onClick={() => setCurrentImg(index)}/>
             })}
-        </div>
+        </div>}
 
             <div className="text-content">
                 <h3 className="date">{month}, {year}</h3>
