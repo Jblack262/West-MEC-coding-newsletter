@@ -3,7 +3,7 @@
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 	color: #fff;
-	padding: 1rem;
+	// padding: 1rem;
 	position: relative;
 	width: 800px;
 	max-width: 95%;
@@ -11,13 +11,8 @@
 	text-align: center;
 
 	font-size: 0.8em;
-	.imgContainer {
-		border-radius: inherit;
-		overflow: hidden;
-		img {
-			max-width: 100%;
-			max-height: 350px;
-		}
+	.text-content {
+		margin: 1rem;
 	}
 	.date {
 		text-align: left;
@@ -32,5 +27,57 @@
 		text-align: left;
 		padding: 0 0.5rem;
 		font-size: clamp(0.75rem, 4.5vw, 1rem);
+	}
+}
+
+.carousel {
+	display: flex;
+	width: 100%;
+	max-height: 20rem;
+	margin-top: 1rem;
+	.imgContainer {
+		// min-height: 20rem;
+		max-height: 100%;
+		// max-width: 80%;
+		width: 90%;
+		margin: 0 auto;
+
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 100%;
+			// width: 100%;
+			flex-shrink: 0;
+			display: block;
+		}
+	}
+	* {
+		stroke: white;
+	}
+	button {
+		background-color: rgba(0, 0, 0, 0.2);
+		outline: none;
+		font-size: 2rem;
+		color: white;
+		margin: 0 1rem;
+	}
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: 0.5rem auto;
+	.navigation-bar {
+		height: 0.75rem;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		margin: 0 0.25rem;
+
+		cursor: pointer;
+
+		&.active {
+			background-color: #ffffffbb;
+		}
 	}
 }
