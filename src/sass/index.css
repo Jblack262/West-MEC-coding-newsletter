@@ -435,7 +435,6 @@ nav .links li a {
   -webkit-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
   color: #fff;
-  padding: 1rem;
   position: relative;
   width: 800px;
   max-width: 95%;
@@ -444,14 +443,8 @@ nav .links li a {
   font-size: 0.8em;
 }
 
-.post .imgContainer {
-  border-radius: inherit;
-  overflow: hidden;
-}
-
-.post .imgContainer img {
-  max-width: 100%;
-  max-height: 350px;
+.post .text-content {
+  margin: 1rem;
 }
 
 .post .date {
@@ -469,6 +462,68 @@ nav .links li a {
   text-align: left;
   padding: 0 0.5rem;
   font-size: clamp(0.75rem, 4.5vw, 1rem);
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-height: 20rem;
+  margin-top: 1rem;
+}
+
+.carousel .imgContainer {
+  max-height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel .imgContainer img {
+  max-width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+}
+
+.carousel * {
+  stroke: white;
+}
+
+.carousel button {
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-size: 2rem;
+  color: white;
+  margin: 0 1rem;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+.navigation .navigation-bar {
+  height: 0.75rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+
+.navigation .navigation-bar.active {
+  background-color: #ffffffbb;
 }
 
 main {
@@ -524,7 +579,7 @@ main {
 .errorPage .content {
   padding-block: 4rem;
   padding-inline: 0.5rem;
-  color: #7cd5de;
+  color: white;
   text-align: center;
   font-size: 125%;
   max-width: 400px;
@@ -571,7 +626,7 @@ main {
   left: 0;
   height: 3px;
   width: 100%;
-  background: #7cd5de;
+  background: white;
   -webkit-transition: -webkit-transform 150ms ease;
   transition: -webkit-transform 150ms ease;
   transition: transform 150ms ease;
@@ -634,7 +689,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #7cd5de;
+  color: white;
 }
 
 .loadingPage::before {
@@ -656,12 +711,12 @@ main {
 }
 
 .loadingPage svg {
-  stroke: #7cd5de;
+  stroke: white;
 }
 
 .loadingPage svg path {
-  stroke: #7cd5de;
-  fill: #7cd5de;
+  stroke: white;
+  fill: white;
 }
 
 .loadingPage .text {
@@ -681,11 +736,11 @@ main {
 .loadingPage .text svg {
   width: 40px;
   margin-top: auto;
-  fill: #7cd5de;
+  fill: white;
 }
 
 .loadingPage .text svg circle {
-  fill: #7cd5de;
+  fill: white;
 }
 
 .blogPage {

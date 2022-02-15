@@ -1,15 +1,6 @@
 const reviews = [
   {
     id: 1,
-    name: 'Alexander Welton',
-    image:
-      require("../Student_Portraits/Alexander Welton.jpg"),
-    text: "Alexander designed the logos for the North East Campus Coding Program Check them out",
-    recent: "https://potato-weather-2.netlify.app/",
-    github: "SchoolPotato",
-  },
-  {
-    id: 2,
     name: 'Andrew Makris',
     image: require("../Student_Portraits/Andrew Makris.jpg"),
     text: 'Quiet talented and hardworking programmer please check out his work',
@@ -17,7 +8,7 @@ const reviews = [
     github: "Amakris12",
   },
   {
-    id: 3,
+    id: 2,
     name: 'Barik Boley',
     image: require("../Student_Portraits/Barik Boley.jpg"),
     text: 'Fantastic Programmer and future Business Tycoon I look forward to see his accomplishments P.S. dont forget MR. B gets 10%',
@@ -25,7 +16,7 @@ const reviews = [
     github: "xBarikadex",
   },
   {
-    id: 4,
+    id: 3,
     name: 'Ethan Roldan',
     image: require("../Student_Portraits/Ethan Roldan.jpg"),
     text: 'FBLA President, hardworker and Great programmer please check out what he has accomplished',
@@ -33,7 +24,7 @@ const reviews = [
     github: "TheCapn-MEC",
   },
   {
-    id: 5,
+    id: 4,
     name: 'Hanad Shippy',
     image: require("../Student_Portraits/Hanad Shippy.jpg"),
     text: 'A smart and adaptable student and underestimates just how smart he is',
@@ -41,7 +32,7 @@ const reviews = [
     github: "Hshipp267",
   },
   {
-    id: 6,
+    id: 5,
     name: 'JD Blackman',
     image: require("../Student_Portraits/JDBlackman.jpg"),
     text: 'A Great student. Makes the great websites on the planet, including this one!',
@@ -50,7 +41,7 @@ const reviews = [
 
   },
   {
-    id: 7,
+    id: 6,
     name: 'Luca Graves',
     image: require("../Student_Portraits/Luca Graves.jpg"),
     text: 'While he may complain about prettier in JS he is a great programmer and designer',
@@ -58,7 +49,7 @@ const reviews = [
     github: "lgrave264",
   },
   {
-    id: 8,
+    id: 7,
     name: 'Maverick Oleson',
     image: require("../Student_Portraits/Maverick Oleson.jpg"),
     text: 'FBLA Historian and highly successful web developer please check out his Audi Synthesizer',
@@ -66,15 +57,7 @@ const reviews = [
     github: "Moleso587587",
   },
   {
-    id: 9,
-    name: 'Lily Zalit',
-    image: require("../Student_Portraits/Lily Zalit.jpg"),
-    text: 'Our New Vice President of Fundraising is Already killing it with our new Mrs. Fields cookie Fundraiser',
-    recent: "https://lzalit238-react-accordian-project.netlify.app/",
-    github: "lzalit238",
-  },
-  {
-    id: 10,
+    id: 8,
     name: 'Dylan Drebes',
     image: require("../Student_Portraits/Dylan Drebes.jpg"),
     text: 'A hardworking and great programmer',
@@ -82,7 +65,7 @@ const reviews = [
     github: "ddrebe473",
   },
   {
-    id: 11,
+    id: 9,
     name: 'Emanuel Jaghrati',
     image: require("../Student_Portraits/Emanuel  Jaghrati.jpg"),
     text: 'E-Man is a great student and great webdesigner',
@@ -90,7 +73,7 @@ const reviews = [
     github: "demonlord6661",
   },
   {
-    id: 12,
+    id: 10,
     name: 'Ethan Langford',
     image: require("../Student_Portraits/Ethan Langford.jpg"),
     text: 'A smart and adaptable student and underestimates just how smart he is',
@@ -98,7 +81,7 @@ const reviews = [
     github: "captren501",
   },
   {
-    id: 13,
+    id: 11,
     name: 'Justin Melore',
     image: require("../Student_Portraits/Justin Melore.jpg"),
     text: 'VP of Social Media and A highly successful and talented programmer',
@@ -106,7 +89,7 @@ const reviews = [
     github: "JustinMelore",
   },
   {
-    id: 14,
+    id: 12,
     name: 'Logan Rubenstein',
     image: require("../Student_Portraits/Logan Rubenstein.jpg"),
     text: 'Logan is a great programmer that is extremely successful in the program, with a slight Chungus Addiction',
@@ -114,7 +97,7 @@ const reviews = [
     github: "B1gChungus",
   },
   {
-    id: 15,
+    id: 13,
     name: 'Louis Win',
     image: require("../Student_Portraits/Louis Win.jpg"),
     text: 'FBLA Treasure and programmer Louis is doing great in the program despite getting of task every now and then ',
@@ -122,15 +105,7 @@ const reviews = [
     github: "lwin496",
   },
   {
-    id: 16,
-    name: 'Matthew Holloway',
-    image: require("../Student_Portraits/Matthew Holloway.jpg"),
-    text: 'Quiet but talented programmer making some ',
-    recent: "https://mattholloway04.github.io/profilePage/",
-    github: "mattholloway04",
-  },
-  {
-    id: 17,
+    id: 14,
     name: 'Roger Grange',
     image: require("../Student_Portraits/Roger Grange.jpg"),
     text: 'Roger Roger... is a doing great making retro games for FBLA and FUN!!!',
@@ -138,7 +113,7 @@ const reviews = [
     github: "RogerRandomDev",
   },
   {
-    id: 18,
+    id: 15,
     name: 'TJ Anderson',
     image: require("../Student_Portraits/Thomas Anderson.jpg"),
     text: 'TJ has learned a lot, watching his growth has been a joy to watch check out what he has been up to.',
@@ -146,7 +121,7 @@ const reviews = [
     github: "Tj5150",
   },
   {
-    id: 19,
+    id: 16,
     name: 'Victor Malhorta',
     image: require("../Student_Portraits/Victor Malhorta.jpg"),
     text: 'Victor is a talented programmer and will be doing even greater things soon enough',
@@ -154,7 +129,7 @@ const reviews = [
     github: "VictorMal001",
   },
   {
-    id: 20,
+    id: 17,
     name: 'Gianna Marotta',
     image: require("../Student_Portraits/Gianna Marotta.jpg"),
     text: 'While it took a while to catch up since the transfer Gianna has done a fantastic job in coding check out what she has been working on.',
@@ -168,7 +143,7 @@ const blogPosts = [
     id: 1,
     month: 'August',
     year: "2021",
-    img: require("../Student_Portraits/Coding_blue.png"),
+    imgs: [require("../Student_Portraits/Coding_blue.png")],
     title: "Welcome West-Mec Coding",
     content: "Hello parents and students website and blog will be used to keep you and the students connected and showcase what they are capable of. Each Month I will be updating student quotes and information to keep everyone in the loop",
   },
@@ -176,6 +151,7 @@ const blogPosts = [
     id: 2,
     month: 'September',
     year: "2021",
+    imgs: [require("../Student_Portraits/students at work.jpg")],
     title: "Coding Students at work",
     content: "Year 2 students are taking their time with their summer amnesia but JS review is going well. Year 1 students are learning webdesign and JS basics and doing GREAT!!!",
   },
@@ -183,16 +159,25 @@ const blogPosts = [
     id: 3,
     month: 'October',
     year: "2021",
-    img: require("../Student_Portraits/Alexander Welton.jpg"),
-    title: "Welcome Tech-Tober",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+    imgs: [require("../Student_Portraits/st.marys 10-23.jpg")],
+    title: "October Successes",
+    content: "This Tech-tober has been an AMAZING Success for West-MEC NEC Coding. Alexander Welton's Designs for T-Shirts/Hoodies/Backpacks were so amazing we have over $300 is re-orders. We also complete our first of many comminity service events at St. Mary's Food Bank",
   },
   {
     id: 4,
     month: 'November',
     year: "2021",
-    title: "Still to Come...",
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore unde eligendi recusandae, accusamus molestiae! Doloremque neque debitis error unde!",
+    imgs: [require("../Student_Portraits/NEC safety.png")],
+    title: "Coding + Safety",
+    content: "Students will be putting on an Internet Safety Event on November 13th Parents, Students and Friends are welcome.",
+  },
+  {
+    id: 5,
+    month: 'December',
+    year: "2021",
+    imgs: [require("../Student_Portraits/NEC safety.png"), require("../Student_Portraits/st.marys 10-23.jpg"), require("../Student_Portraits/NEC safety.png"), require("../Student_Portraits/st.marys 10-23.jpg"), require("../Student_Portraits/NEC safety.png"), require("../Student_Portraits/st.marys 10-23.jpg")],
+    title: "Coding to All Ages",
+    content: "Future Coding students visted our program to take a look at what our Program had to offer and our students were great \n Please check out our students new work",
   },
 ]
 
