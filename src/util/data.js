@@ -196,6 +196,14 @@ const blogPosts = [
     title: "Coding to All Ages",
     content: "Future Coding students visted our program to take a look at what our Program had to offer and our students were great \n Please check out our students new work",
   },
+  {
+    id: 6,
+    month: 'January',
+    year: "2022",
+    imgs: [require("../Student_Portraits/st_marys1.jpg"), require("../Student_Portraits/st_marys2.jpg.jpg"), require("../Student_Portraits/st_marys3.jpg.png"), require("../Student_Portraits/st_marys4.jpg.jpg"), require("../Student_Portraits/st_marys5.jpg.png"), require("../Student_Portraits/st_marys6.jpg.jpg"),require("../Student_Portraits/st_marys7.jpg.jpg"),require("../Student_Portraits/st_marys8.jpg.jpg"),require("../Student_Portraits/st_marys_vid.jpg.jpg"),],
+    title: "New Years 2022-Coding Giving Back",
+    content: "The Students visited to St. Mary Food Bank to give back to the community and start the NEW YEAR of right!!!",
+  },
 ]
 
 export {
