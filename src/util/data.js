@@ -192,7 +192,7 @@ const blogPosts = [
     id: 5,
     month: 'December',
     year: "2021",
-    imgs: [require("../Student_Portraits/NEC safety.png"), require("../Student_Portraits/st.marys 10-23.jpg"), require("../Student_Portraits/NEC safety.png"), require("../Student_Portraits/st.marys 10-23.jpg"), require("../Student_Portraits/NEC safety.png"), require("../Student_Portraits/st.marys 10-23.jpg")],
+    imgs: [require("../Student_Portraits/Dec-blog.png")],
     title: "Coding to All Ages",
     content: "Future Coding students visted our program to take a look at what our Program had to offer and our students were great \n Please check out our students new work",
   },
